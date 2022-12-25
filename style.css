@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  transition: 0.6s;
+}
+
+.main {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("./images/bg.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main .screen {
+  width: 100%;
+  min-height: 100vh;
+}
+.main .screen .header {
+  background-color: #232f3e;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.main .screen .header img.left {
+  margin-right: 15px;
+  height: 35px;
+}
+.main .screen .header img.right {
+  margin-left: 15px;
+  height: 35px;
+}
+.main .screen .header h1 {
+  text-align: center;
+  font-size: 30px;
+  margin: 0px;
+  color: #fff;
+  font-weight: 600;
+}
+.main .screen .content {
+  padding: 10px;
+}
+.main .screen .content a {
+  display: block;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #232f3e;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 15px;
+  transition: 0.6s;
+  position: relative;
+}
+.main .screen .content a:hover {
+  background-color: #232f3e;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

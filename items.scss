@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+$dark: #232f3e;
+$white: #fff;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-drag: none;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    transition: 0.6s;
+}
+
+.main_wrap {
+    height: 100vh;
+    width: 100%;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+
+
+    .screen {
+        width: 100%;
+        min-height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        @media only screen and (max-width:700px) {
+            width: 100%;
+        }
+
+        .header {
+            z-index: 1;
+            background-color: $dark;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+            position: sticky;
+            top: 0px;
+
+            img.left {
+                margin-right: 15px;
+                height: 35px;
+            }
+
+            img.right {
+                margin-left: 15px;
+                height: 35px;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 30px;
+                margin: 0px;
+                color: $white;
+                font-weight: 600;
+            }
+        }
+
+        .show {
+            padding-bottom:30px;
+            .item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 30px;
+                padding: 0px 20px;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    height: 1px;
+                    width: calc(100% - 40px);
+                    background-color: $dark;
+                    bottom: -20px;
+                    z-index: 0;
+                }
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    background-color: $dark;
+                    bottom: -29px;
+                    z-index: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                p.name {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: $dark;
+                    text-align: center;
+                    margin: 0px;
+                }
+
+                p.text {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $dark;
+                    text-align: center;
+                    margin: 5px 0px;
+                }
+
+                p.price {
+                    font-size: 22px;
+                    font-weight: 600;
+                    color: $dark;
+                    text-align: center;
+                    margin: 0px;
+                }
+            }
+        }
+
+        .contacts{
+             padding:20px;
+             position:relative;
+             margin-bottom:50px;
+             &::after {
+                position: absolute;
+                content: "";
+                height: 1px;
+                width: calc(100% - 40px);
+                background-color: $dark;
+                bottom:0px;
+                z-index: 0;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                background-color: $dark;
+                bottom:-9px;
+                z-index: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+             .item{
+                display: flex;
+                align-items: center;
+                margin-bottom:20px;
+                img{
+                    height:30px;
+                }
+                p{
+                    font-size:18px;
+                    font-weight:500;
+                    color:$dark;
+                    margin:0px;
+                    margin-left:10px;
+                }            
+             }
+             h1{
+                color:$dark;
+                text-align: center;
+                letter-spacing: 0px;
+                margin-top:25px;
+                font-size:25px;
+                
+            }
+            h1.last{
+                color:$dark;
+                text-align: center;
+                letter-spacing: 0px;
+                margin-top:25px;
+                font-size:35px;
+                position:relative;
+               
+            }
+            p.text{
+                font-size:16px;
+                color:$dark;
+                text-align: center;
+                margin-top:10px;
+                font-weight:500;
+            }
+        }
+
+    }
+}
+
+.soup {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("./images/bgsoup.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.salad {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("./images/bgsalad.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.acompaniment {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("./images/accompnimentbg.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pizza {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("./images/bgpizza.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.connect {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("./images/bg.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
